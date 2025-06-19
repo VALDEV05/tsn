@@ -66,8 +66,7 @@ header.site-header .container .row .col-12 {
   justify-content: center;
   align-items: center;
   font-size: 34px;
-   color: var(--white);
-
+  color: var(--white);
 }
 
 /* ==========================================================================
@@ -77,10 +76,57 @@ header.site-header .container .row .col-12 {
   7.0 - main
    ========================================================================== */
 main.site-main {
-   background-color: var(--black);
-   color: var(--white);
+  background-color: var(--black);
+  color: var(--white);
   padding-top: 72px;
 }
+main.site-main .container .row .col-12 {
+  display: flex;
+  justify-content: center;
+}
+/* post */
+.post {
+  max-width: 500px;
+  width: 500px;
+  margin: 40px auto;
+  /* border: 1px solid #dbdbdb; */
+  border: 1px solid red;
+  border-radius: 16px;
+  padding: 8px;
+}
+.post-header {
+  display: flex;
+  align-items: top;
+  gap: 8px;
+}
+.post-header .user-image {
+  width: 64px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: red;
+}
+.post-header .userData {
+   height: 64px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.post-header .userData .userName {
+  font-size: 22px;
+  display: flex;
+   align-items: center;
+}
+.post-header .userData .userName .badge svg{
+       width: 24px;
+    height: auto;
+}
+.post-header .userData .lastEntry{
+   font-size: 14px;
+   color: var(--grey);
+   opacity: 0.7;
+}
+
 /* ==========================================================================
   -1 - Responsive
    ========================================================================== */
